@@ -1,0 +1,76 @@
+2026-02-17 19:13:09,572 [WARNING] analyzer.ollama_analyzer: ⚠️ Ollama not found at http://localhost:11434. AI analysis will be disabled.
+2026-02-17 19:13:09,572 [INFO] main: 🚀 Starting SoccerBot (Web UI)...
+2026-02-17 19:13:14,658 [INFO] scraper.scraper_manager: ✅ Initialized scraper: 1xbet
+2026-02-17 19:13:17,639 [INFO] scraper.scraper_manager: ✅ Initialized scraper: sportpesa
+2026-02-17 19:13:17,644 [INFO] ui.web_server: 🌐 Dashboard available at http://localhost:8080
+2026-02-17 19:13:17,645 [INFO] main: ✅ SoccerBot ready!
+2026-02-17 19:13:17,645 [INFO] main: 🔄 Analysis cycle starting...
+2026-02-17 19:13:17,646 [INFO] main: 📊 Fetching team statistics...
+2026-02-17 19:13:18,262 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-17 19:13:18,305 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-17 19:13:18,306 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-17 19:13:18,364 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-17 19:13:18,377 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-17 19:13:18,379 [INFO] analyzer.stats_fetcher: Total cached teams: 0
+2026-02-17 19:13:18,380 [INFO] main: 📊 Stats loaded: 0 teams
+2026-02-17 19:13:32,127 [WARNING] scraper.site_sportpesa: [SportPesa] DOM scrape failed: Page.wait_for_selector: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator(".live-event, [class*='event-row'], .match-row") to be visible
+
+2026-02-17 19:13:32,127 [INFO] scraper.site_sportpesa: [SportPesa] Found 0 live games
+2026-02-17 19:13:34,890 [WARNING] scraper.site_1xbet: [1xbet] DOM scraping failed: Page.wait_for_selector: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator(".liveLine__game, [class*='live-game']") to be visible
+
+2026-02-17 19:13:34,890 [INFO] scraper.site_1xbet: [1xbet] Got 0 games via DOM scraping
+2026-02-17 19:13:34,890 [INFO] scraper.scraper_manager: Total unique live games: 0
+2026-02-17 19:14:35,013 [INFO] main: 🔄 Analysis cycle starting...
+2026-02-17 19:14:43,779 [INFO] scraper.site_1xbet: [1xbet] Got 126 games via API interception
+2026-02-17 19:14:48,656 [WARNING] scraper.site_sportpesa: [SportPesa] DOM scrape failed: Page.wait_for_selector: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator(".live-event, [class*='event-row'], .match-row") to be visible
+
+2026-02-17 19:14:48,657 [INFO] scraper.site_sportpesa: [SportPesa] Found 0 live games
+2026-02-17 19:14:48,657 [INFO] scraper.scraper_manager: [1xbet] Got 126 games
+2026-02-17 19:14:48,657 [INFO] scraper.scraper_manager: Total unique live games: 1
+2026-02-17 19:14:48,658 [INFO] main: Analysis complete: 0 recommendations across 0 games
+2026-02-17 19:15:48,819 [INFO] main: 🔄 Analysis cycle starting...
+2026-02-17 19:15:57,190 [INFO] scraper.site_1xbet: [1xbet] Got 126 games via API interception
+2026-02-17 19:16:02,476 [WARNING] scraper.site_sportpesa: [SportPesa] DOM scrape failed: Page.wait_for_selector: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator(".live-event, [class*='event-row'], .match-row") to be visible
+
+2026-02-17 19:16:02,477 [INFO] scraper.site_sportpesa: [SportPesa] Found 0 live games
+2026-02-17 19:16:02,477 [INFO] scraper.scraper_manager: [1xbet] Got 126 games
+2026-02-17 19:16:02,478 [INFO] scraper.scraper_manager: Total unique live games: 1
+2026-02-17 19:16:02,478 [INFO] main: Analysis complete: 0 recommendations across 0 games
+2026-02-17 19:17:02,573 [INFO] main: 🔄 Analysis cycle starting...
+2026-02-17 19:17:11,187 [INFO] scraper.site_1xbet: [1xbet] Got 2 games via API interception
+2026-02-17 19:17:16,129 [WARNING] scraper.site_sportpesa: [SportPesa] DOM scrape failed: Page.wait_for_selector: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator(".live-event, [class*='event-row'], .match-row") to be visible
+
+2026-02-17 19:17:16,129 [INFO] scraper.site_sportpesa: [SportPesa] Found 0 live games
+2026-02-17 19:17:16,129 [INFO] scraper.scraper_manager: [1xbet] Got 2 games
+2026-02-17 19:17:16,129 [INFO] scraper.scraper_manager: Total unique live games: 1
+2026-02-17 19:17:16,130 [INFO] main: Analysis complete: 0 recommendations across 0 games
+2026-02-17 19:18:16,184 [INFO] main: 🔄 Analysis cycle starting...
+2026-02-17 19:18:24,708 [INFO] scraper.site_1xbet: [1xbet] Got 125 games via API interception
+2026-02-17 19:18:29,697 [WARNING] scraper.site_sportpesa: [SportPesa] DOM scrape failed: Page.wait_for_selector: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator(".live-event, [class*='event-row'], .match-row") to be visible
+
+2026-02-17 19:18:29,697 [INFO] scraper.site_sportpesa: [SportPesa] Found 0 live games
+2026-02-17 19:18:29,697 [INFO] scraper.scraper_manager: [1xbet] Got 125 games
+2026-02-17 19:18:29,698 [INFO] scraper.scraper_manager: Total unique live games: 1
+2026-02-17 19:18:29,698 [INFO] main: Analysis complete: 0 recommendations across 0 games
+2026-02-17 19:19:29,804 [INFO] main: 🔄 Analysis cycle starting...
+2026-02-17 19:19:38,275 [INFO] scraper.site_1xbet: [1xbet] Got 125 games via API interception
+2026-02-17 19:19:43,493 [WARNING] scraper.site_sportpesa: [SportPesa] DOM scrape failed: Page.wait_for_selector: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator(".live-event, [class*='event-row'], .match-row") to be visible
+
+2026-02-17 19:19:43,493 [INFO] scraper.site_sportpesa: [SportPesa] Found 0 live games
+2026-02-17 19:19:43,493 [INFO] scraper.scraper_manager: [1xbet] Got 125 games
+2026-02-17 19:19:43,494 [INFO] scraper.scraper_manager: Total unique live games: 1
+2026-02-17 19:19:43,495 [INFO] main: Analysis complete: 0 recommendations across 0 games

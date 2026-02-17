@@ -1,0 +1,20 @@
+# requirements.txt - SoccerBot dependencies
+
+# UI
+customtkinter>=5.2.0
+
+# Browser automation & scraping
+playwright>=1.40.0
+
+# HTTP client (async)
+aiohttp>=3.9.0
+
+# Data analysis
+numpy>=1.24.0
+scipy>=1.11.0
+pandas>=2.0.0
+
+# Utilities
+requests>=2.31.0
+
+# Database (built-in sqlite3, no install needed)

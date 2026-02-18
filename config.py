@@ -78,7 +78,7 @@ ENABLED_SITES = [
 ]
 
 SITE_URLS = {
-    "1xbet": "https://1xbet.com/en/live/football",
+    "1xbet": "https://1xbet.co.ke/en/live/football",
     "sportpesa": "https://www.sportpesa.com/games/live",
     "betway": "https://betway.co.ke/sport/live/football",
     "odibets": "https://odibets.com/live",

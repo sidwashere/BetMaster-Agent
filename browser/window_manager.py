@@ -43,7 +43,7 @@ class WindowManager:
     """
     
     # Keywords to identify 1xbet windows
-    1XBET_TERMS = ["1xbet", "1xbet.com", "1XBET"]
+    XBET_TERMS = ["1xbet", "1xbet.com", "1XBET"]
     
     # Supported browsers
     BROWSER_PROCESSES = ["chrome", "msedge", "firefox", "brave", "opera"]
@@ -95,7 +95,7 @@ class WindowManager:
                 try:
                     title = window.title.lower()
                     # Check if title contains 1xbet
-                    if any(term in title for term in self._1XBET_TERMS):
+                    if any(term in title for term in self.XBET_TERMS):
                         # Get process info
                         try:
                             pid = window.getProcessID()
@@ -127,7 +127,7 @@ class WindowManager:
             def enum_callback(hwnd, windows):
                 if win32gui.IsWindowVisible(hwnd):
                     title = win32gui.GetWindowText(hwnd)
-                    if any(term in title.lower() for term in self._1XBET_TERMS):
+                    if any(term in title.lower() for term in self.XBET_TERMS):
                         # Get process ID
                         _, pid = win32process.GetWindowThreadProcessId(hwnd)
                         
@@ -209,7 +209,7 @@ class WindowManager:
         """Check if 1xbet window is currently active/focused"""
         active_title = self.get_active_window_title()
         if active_title:
-            return any(term in active_title.lower() for term in self._1XBET_TERMS)
+            return any(term in active_title.lower() for term in self.XBET_TERMS)
         return False
     
     def get_chrome_debug_port(self, window: BrowserWindow) -> Optional[str]:
@@ -265,7 +265,7 @@ class WindowManager:
                                 "process": proc_name,
                                 "pid": pid,
                                 "hwnd": w._hWnd,
-                                "is_1xbet": any(term in title for term in self._1XBET_TERMS)
+                                "is_1xbet": any(term in title for term in self.XBET_TERMS)
                             })
                     except:
                         continue

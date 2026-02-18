@@ -20,6 +20,8 @@ import sys
 import os
 
 os.makedirs("logs", exist_ok=True)
+
+# Configure logging with UTF-8 encoding
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
@@ -28,6 +30,13 @@ logging.basicConfig(
         logging.FileHandler("logs/betmaster.log", encoding="utf-8"),
     ]
 )
+
+# Fix for Windows console encoding
+if sys.platform == 'win32':
+    import io
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
+
 logger = logging.getLogger("main")
 
 import config
@@ -228,6 +237,7 @@ class BetMasterAgent:
             self.engine.poisson.update_team_ratings(all_ratings)
 
         # Step 3: Run analysis
+        logger.info(f"Running batch analysis on {len(games)} games...")
         recommendations = await self.engine.batch_analyze(games)
         total_recs = sum(len(r) for r in recommendations.values())
         logger.info(f"Analysis complete: {total_recs} recommendations")
@@ -362,14 +372,14 @@ class BetMasterAgent:
 
 if __name__ == "__main__":
     print("""
-    ⚽ ================================================== ⚽
+    ==================================================
           BetMaster Agent - AI-Powered Football Betting
-    ⚽ ================================================== ⚽
+    ==================================================
     
     Starting up...
-    • Browser: CDP connection to existing or new browser
-    • Ollama: {model}
-    • Strategy: {strategy}
+    - Browser: CDP connection to existing or new browser
+    - Ollama: {model}
+    - Strategy: {strategy}
     
     Configuration: config.py
     Logs: logs/betmaster.log

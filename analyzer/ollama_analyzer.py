@@ -133,7 +133,7 @@ class OllamaAnalyzer:
             response = requests.post(
                 self.api_url, 
                 json=payload, 
-                timeout=15  # gemma3:1b should be fast
+                timeout=30  # Increased for gemma3:1b
             )
             
             if response.status_code == 200:

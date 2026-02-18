@@ -311,11 +311,11 @@ class LiveScraper:
         try:
             session = await self.get_session()
             
-            # Odds API for live odds
-            url = "https://api.the-odds-api.com/v4/sports/soccer_euw/odds"
+            # Odds API for live odds - use soccer_epl which works
+            url = "https://api.the-odds-api.com/v4/sports/soccer_epl/odds"
             params = {
                 "apiKey": self.odds_api_key,
-                "regions": "us",  # or uk_eu
+                "regions": "uk,us,eu",
                 "markets": "h2h,totals",
                 "oddsFormat": "decimal",
                 "live": "true"
@@ -324,17 +324,16 @@ class LiveScraper:
             async with session.get(url, params=params, timeout=aiohttp.ClientTimeout(total=10)) as resp:
                 if resp.status == 200:
                     data = await resp.json()
+                    logger.info(f"Odds API returned {len(data)} games")
                     
                     for event in data:
-                        # Find 1xbet bookmaker
-                        bookmaker = None
-                        for bm in event.get("bookmakers", []):
-                            if bm.get("key") == "1xbet":
-                                bookmaker = bm
-                                break
-                        
-                        if not bookmaker:
+                        # Use first available bookmaker (not just 1xbet)
+                        bookmakers = event.get("bookmakers", [])
+                        if not bookmakers:
                             continue
+                        
+                        # Use the first bookmaker with odds
+                        bookmaker = bookmakers[0]
                         
                         home = event.get("home_team", "Unknown")
                         away = event.get("away_team", "Unknown")

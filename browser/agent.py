@@ -174,15 +174,22 @@ class BrowserAgent:
         logger.warning("Could not connect to existing browser")
         return False
     
-    async def navigate_to_1xbet(self, url: str = "https://1xbet.com/en/live/football") -> bool:
+    async def navigate_to_1xbet(self, url: str = None) -> bool:
         """Navigate to 1xbet live football page"""
         if not self.page:
             logger.error("No page available")
             return False
         
+        if url is None:
+            # Import config dynamically to get current URL
+            import config
+            url = config.SITE_URLS.get("1xbet", "https://1xbet.co.ke/en/live/football")
+        
         try:
-            await self.page.goto(url, wait_until="networkidle", timeout=30000)
-            await self.page.wait_for_timeout(3000)
+            # Use domcontentloaded instead of networkidle for faster loading
+            await self.page.goto(url, wait_until="domcontentloaded", timeout=45000)
+            # Wait for page to settle
+            await self.page.wait_for_timeout(5000)
             logger.info(f"Navigated to: {self.page.url}")
             return True
         except Exception as e:
@@ -270,6 +277,17 @@ class BrowserAgent:
             return games
         
         try:
+            # Take debug screenshot
+            try:
+                screenshot = await self.page.screenshot(type='png')
+                import os
+                os.makedirs("debug", exist_ok=True)
+                with open("debug/last_page.png", "wb") as f:
+                    f.write(screenshot)
+                logger.debug("Saved debug screenshot to debug/last_page.png")
+            except:
+                pass
+            
             # Try to get data from page JavaScript
             game_data = await self.page.evaluate("""
                 () => {
@@ -397,7 +415,12 @@ class BrowserAgent:
                 ".live-event",
                 "[class*='gameRow']",
                 "[class*='event-']",
-                ".cm-live-_events__item"
+                ".cm-live-_events__item",
+                ".c-events__item",
+                "[class*='live-game']",
+                ".sport-event",
+                ".eventMatch",
+                "div[class*='event']",
             ]
             
             game_elements = []

@@ -1,0 +1,709 @@
+2026-02-18 11:48:02,985 [WARNING] browser.window_manager: pywinctl not available, using fallback
+2026-02-18 11:48:34,374 [WARNING] browser.window_manager: pywinctl not available, using fallback
+2026-02-18 11:49:04,424 [WARNING] browser.window_manager: pywinctl not available, using fallback
+2026-02-18 11:49:06,897 [INFO] analyzer.ollama_analyzer: ✅ Ollama connected at http://localhost:11434 (model: gemma3:1b)
+2026-02-18 11:49:06,926 [INFO] main: 🚀 Starting BetMaster Agent...
+2026-02-18 11:50:20,103 [WARNING] browser.window_manager: pywinctl not available, using fallback
+2026-02-18 11:50:25,850 [INFO] analyzer.ollama_analyzer: ✅ Ollama connected at http://localhost:11434 (model: gemma3:1b)
+2026-02-18 11:50:25,855 [INFO] main: 🚀 Starting BetMaster Agent...
+2026-02-18 11:50:38,424 [WARNING] browser.agent: Could not connect to existing browser
+2026-02-18 11:50:38,424 [INFO] browser.agent: Launching new browser...
+2026-02-18 11:50:40,716 [INFO] main: Browser connected via: new
+2026-02-18 11:51:10,801 [ERROR] browser.agent: Navigation failed: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://1xbet.com/en/live/football", waiting until "networkidle"
+
+2026-02-18 11:51:10,806 [INFO] ui.web_server: 🌐 Dashboard available at http://localhost:8080
+2026-02-18 11:51:10,836 [INFO] main: ✅ BetMaster Agent ready!
+2026-02-18 11:51:10,839 [INFO] main: 📊 Fetching team statistics...
+2026-02-18 11:51:10,922 [INFO] browser.agent: Found 0 live games
+2026-02-18 11:51:11,583 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 11:51:11,585 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 11:51:11,599 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 11:51:11,619 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 11:51:11,631 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 11:51:11,632 [INFO] analyzer.stats_fetcher: Total cached teams: 0
+2026-02-18 11:51:11,632 [INFO] main: 📊 Stats loaded: 0 teams
+2026-02-18 11:51:12,247 [INFO] scraper.scraper_manager: Total unique live human games: 0 (filtered out 0)
+2026-02-18 12:00:54,299 [INFO] analyzer.ollama_analyzer: ✅ Ollama connected at http://localhost:11434 (model: gemma3:1b)
+2026-02-18 12:00:54,300 [INFO] main: 🚀 Starting BetMaster Agent...
+2026-02-18 12:00:56,686 [WARNING] browser.agent: Could not connect to existing browser
+2026-02-18 12:00:56,687 [INFO] browser.agent: Launching new browser...
+2026-02-18 12:00:57,534 [INFO] main: Browser connected via: new
+2026-02-18 12:01:24,515 [INFO] browser.agent: Navigated to: https://1xbet.co.ke/en/live/football
+2026-02-18 12:01:24,521 [INFO] ui.web_server: 🌐 Dashboard available at http://localhost:8080
+2026-02-18 12:01:24,522 [INFO] main: ✅ BetMaster Agent ready!
+2026-02-18 12:01:24,524 [INFO] main: 📊 Fetching team statistics...
+2026-02-18 12:01:25,349 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:01:25,358 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:01:25,368 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:01:25,383 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:01:25,395 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:01:25,405 [INFO] analyzer.stats_fetcher: Total cached teams: 0
+2026-02-18 12:01:25,406 [INFO] main: 📊 Stats loaded: 0 teams
+2026-02-18 12:01:25,554 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:01:27,171 [INFO] scraper.scraper_manager: Total unique live human games: 0 (filtered out 0)
+2026-02-18 12:01:36,222 [INFO] main: 👋 BetMaster shutting down...
+2026-02-18 12:01:44,505 [INFO] analyzer.ollama_analyzer: ✅ Ollama connected at http://localhost:11434 (model: gemma3)
+2026-02-18 12:01:44,506 [INFO] main: 🚀 Starting BetMaster Agent...
+2026-02-18 12:01:46,670 [WARNING] browser.agent: Could not connect to existing browser
+2026-02-18 12:01:46,670 [INFO] browser.agent: Launching new browser...
+2026-02-18 12:01:47,427 [INFO] main: Browser connected via: new
+2026-02-18 12:02:17,493 [ERROR] browser.agent: Navigation failed: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://1xbet.com/en/live/football", waiting until "networkidle"
+
+2026-02-18 12:02:17,504 [INFO] ui.web_server: 🌐 Dashboard available at http://localhost:8080
+2026-02-18 12:02:17,504 [INFO] main: ✅ BetMaster Agent ready!
+2026-02-18 12:02:17,508 [INFO] main: 📊 Fetching team statistics...
+2026-02-18 12:02:17,660 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:02:19,316 [INFO] scraper.scraper_manager: Total unique live human games: 0 (filtered out 0)
+2026-02-18 12:02:19,447 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:02:19,449 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:02:19,450 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:02:19,464 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:02:19,526 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:02:19,527 [INFO] analyzer.stats_fetcher: Total cached teams: 0
+2026-02-18 12:02:19,529 [INFO] main: 📊 Stats loaded: 0 teams
+2026-02-18 12:03:19,938 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:03:21,259 [INFO] scraper.scraper_manager: Total unique live human games: 0 (filtered out 0)
+2026-02-18 12:03:56,088 [INFO] aiohttp.access: ::1 [18/Feb/2026:12:03:56 +0300] "GET / HTTP/1.1" 200 30681 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-02-18 12:03:57,807 [INFO] aiohttp.access: ::1 [18/Feb/2026:12:03:57 +0300] "GET /favicon.ico HTTP/1.1" 404 174 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-02-18 12:04:21,754 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:04:23,106 [INFO] scraper.scraper_manager: Total unique live human games: 0 (filtered out 0)
+2026-02-18 12:05:23,659 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:05:24,989 [INFO] scraper.scraper_manager: Total unique live human games: 0 (filtered out 0)
+2026-02-18 12:05:34,758 [INFO] aiohttp.access: ::1 [18/Feb/2026:12:05:34 +0300] "GET / HTTP/1.1" 200 30681 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-02-18 12:06:25,590 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:06:26,974 [INFO] scraper.scraper_manager: Total unique live human games: 0 (filtered out 0)
+2026-02-18 12:07:27,580 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:07:30,720 [INFO] scraper.scraper_manager: Total unique live human games: 0 (filtered out 0)
+2026-02-18 12:08:31,363 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:08:32,718 [INFO] scraper.scraper_manager: Total unique live human games: 0 (filtered out 0)
+2026-02-18 12:09:33,161 [INFO] analyzer.ollama_analyzer: ✅ Ollama connected at http://localhost:11434 (model: gemma3)
+2026-02-18 12:09:33,169 [INFO] main: 🚀 Starting BetMaster Agent...
+2026-02-18 12:09:33,358 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:09:34,744 [INFO] scraper.scraper_manager: Total unique live human games: 0 (filtered out 0)
+2026-02-18 12:09:35,725 [WARNING] browser.agent: Could not connect to existing browser
+2026-02-18 12:09:35,726 [INFO] browser.agent: Launching new browser...
+2026-02-18 12:09:36,790 [INFO] main: Browser connected via: new
+2026-02-18 12:10:01,182 [ERROR] browser.agent: Navigation failed: Page.goto: Page crashed
+Call log:
+  - navigating to "https://1xbet.com/en/live/football", waiting until "networkidle"
+
+2026-02-18 12:10:01,193 [ERROR] main: Async loop error: [Errno 10048] error while attempting to bind on address ('::1', 8080, 0, 0): [winerror 10048] only one usage of each socket address (protocol/network address/port) is normally permitted
+2026-02-18 12:10:35,539 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:10:36,908 [INFO] scraper.scraper_manager: Total unique live human games: 0 (filtered out 0)
+2026-02-18 12:11:01,258 [INFO] analyzer.ollama_analyzer: ✅ Ollama connected at http://localhost:11434 (model: gemma3)
+2026-02-18 12:11:01,265 [INFO] main: 🚀 Starting BetMaster Agent...
+2026-02-18 12:11:03,555 [WARNING] browser.agent: Could not connect to existing browser
+2026-02-18 12:11:03,555 [INFO] browser.agent: Launching new browser...
+2026-02-18 12:11:04,533 [INFO] main: Browser connected via: new
+2026-02-18 12:11:22,725 [INFO] browser.agent: Navigated to: https://1xbet.co.ke/en/live/football
+2026-02-18 12:11:22,733 [INFO] ui.web_server: 🌐 Dashboard available at http://localhost:8080
+2026-02-18 12:11:22,736 [INFO] main: ✅ BetMaster Agent ready!
+2026-02-18 12:11:22,739 [INFO] main: 📊 Fetching team statistics...
+2026-02-18 12:11:23,484 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:11:23,503 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:11:23,504 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:11:23,517 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:11:23,536 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:11:23,537 [INFO] analyzer.stats_fetcher: Total cached teams: 0
+2026-02-18 12:11:23,537 [INFO] main: 📊 Stats loaded: 0 teams
+2026-02-18 12:11:26,087 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:11:27,675 [INFO] browser.live_scraper: Odds API returned 21 games
+2026-02-18 12:11:27,675 [INFO] browser.live_scraper: Odds API: 0 games
+2026-02-18 12:11:27,676 [INFO] scraper.scraper_manager: Total unique live human games: 0 (filtered out 0)
+2026-02-18 12:12:28,683 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:12:30,393 [INFO] browser.live_scraper: Odds API returned 21 games
+2026-02-18 12:12:30,394 [INFO] browser.live_scraper: Odds API: 0 games
+2026-02-18 12:12:30,399 [INFO] scraper.scraper_manager: Total unique live human games: 0 (filtered out 0)
+2026-02-18 12:13:04,988 [INFO] analyzer.ollama_analyzer: ✅ Ollama connected at http://localhost:11434 (model: gemma3)
+2026-02-18 12:13:04,992 [INFO] main: 🚀 Starting BetMaster Agent...
+2026-02-18 12:13:07,356 [WARNING] browser.agent: Could not connect to existing browser
+2026-02-18 12:13:07,356 [INFO] browser.agent: Launching new browser...
+2026-02-18 12:13:08,210 [INFO] main: Browser connected via: new
+2026-02-18 12:13:17,719 [INFO] browser.agent: Navigated to: https://1xbet.co.ke/en/live/football
+2026-02-18 12:13:17,742 [INFO] ui.web_server: 🌐 Dashboard available at http://localhost:8080
+2026-02-18 12:13:17,744 [INFO] main: ✅ BetMaster Agent ready!
+2026-02-18 12:13:17,751 [INFO] main: 📊 Fetching team statistics...
+2026-02-18 12:13:18,292 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:13:18,552 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:13:19,669 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:13:19,726 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:13:19,750 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:13:19,755 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:13:19,756 [INFO] analyzer.stats_fetcher: Total cached teams: 0
+2026-02-18 12:13:19,756 [INFO] main: 📊 Stats loaded: 0 teams
+2026-02-18 12:13:19,953 [INFO] browser.live_scraper: Odds API returned 21 games
+2026-02-18 12:13:19,953 [INFO] browser.live_scraper: Odds API: 21 games
+2026-02-18 12:13:19,955 [INFO] browser.live_scraper: Got 21 games via Odds API
+2026-02-18 12:13:19,955 [INFO] main: Analysis complete: 0 recommendations
+2026-02-18 12:14:20,767 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:14:24,153 [INFO] browser.live_scraper: Odds API returned 21 games
+2026-02-18 12:14:24,153 [INFO] browser.live_scraper: Odds API: 21 games
+2026-02-18 12:14:24,154 [INFO] browser.live_scraper: Got 21 games via Odds API
+2026-02-18 12:14:24,155 [INFO] main: Analysis complete: 0 recommendations
+2026-02-18 12:15:44,953 [INFO] analyzer.ollama_analyzer: ✅ Ollama connected at http://localhost:11434 (model: gemma3)
+2026-02-18 12:15:44,957 [INFO] main: 🚀 Starting BetMaster Agent...
+2026-02-18 12:15:47,255 [WARNING] browser.agent: Could not connect to existing browser
+2026-02-18 12:15:47,255 [INFO] browser.agent: Launching new browser...
+2026-02-18 12:15:48,111 [INFO] main: Browser connected via: new
+2026-02-18 12:15:54,967 [INFO] browser.agent: Navigated to: https://1xbet.co.ke/en/live/football
+2026-02-18 12:15:54,972 [INFO] ui.web_server: 🌐 Dashboard available at http://localhost:8080
+2026-02-18 12:15:54,975 [INFO] main: ✅ BetMaster Agent ready!
+2026-02-18 12:15:54,982 [INFO] main: 📊 Fetching team statistics...
+2026-02-18 12:15:55,391 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:15:55,743 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:15:55,756 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:15:55,784 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:15:56,240 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:15:56,789 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:15:56,790 [INFO] analyzer.stats_fetcher: Total cached teams: 0
+2026-02-18 12:15:56,790 [INFO] main: 📊 Stats loaded: 0 teams
+2026-02-18 12:15:59,941 [INFO] browser.live_scraper: Odds API returned 21 games
+2026-02-18 12:15:59,942 [INFO] browser.live_scraper: Odds API: 21 games
+2026-02-18 12:15:59,943 [INFO] browser.live_scraper: Got 21 games via Odds API
+2026-02-18 12:16:00,102 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:16:00,117 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:16:00,177 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:16:00,201 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:16:00,218 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:16:00,249 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:16:00,309 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:16:00,352 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:16:00,421 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:16:00,475 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:16:00,501 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:16:00,600 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:16:00,632 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:16:00,656 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:16:00,723 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:16:00,759 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:16:00,900 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:16:00,910 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:16:00,927 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:16:00,941 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:16:00,957 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:16:00,960 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:16:00,967 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:16:00,969 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:16:00,969 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:16:00,970 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:16:00,970 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:16:00,970 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:16:00,970 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:16:00,970 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:16:00,970 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:16:00,973 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:16:00,973 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:16:00,973 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:16:00,973 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:16:00,973 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:16:00,974 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:16:00,974 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:16:00,974 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:16:00,974 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:16:00,974 [ERROR] main: Analysis cycle error: 'AnalysisResult' object has no attribute 'get'
+2026-02-18 12:16:00,992 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:16:00,992 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:17:02,589 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:17:04,285 [INFO] browser.live_scraper: Odds API returned 21 games
+2026-02-18 12:17:04,286 [INFO] browser.live_scraper: Odds API: 21 games
+2026-02-18 12:17:04,287 [INFO] browser.live_scraper: Got 21 games via Odds API
+2026-02-18 12:17:04,361 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:17:04,364 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:17:04,425 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:17:04,482 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:17:04,514 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:17:04,522 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:17:04,572 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:17:04,597 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:17:04,607 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:17:04,648 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:17:04,671 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:17:04,716 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:17:04,756 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:17:04,798 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:17:04,806 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:17:04,838 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:17:04,855 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:17:04,906 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:17:04,941 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:17:04,977 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:17:04,977 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:17:04,977 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:17:04,977 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:17:04,981 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:17:04,981 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:17:04,982 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:17:04,983 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:17:04,983 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:17:04,984 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:17:04,984 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:17:04,984 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:17:04,985 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:17:04,985 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:17:04,985 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:17:04,985 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:17:04,985 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:17:04,985 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:17:04,986 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:17:04,986 [ERROR] main: Analysis cycle error: 'AnalysisResult' object has no attribute 'get'
+2026-02-18 12:17:04,990 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:17:04,991 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:17:04,992 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:17:04,993 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:18:05,856 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:18:07,551 [INFO] browser.live_scraper: Odds API returned 21 games
+2026-02-18 12:18:07,551 [INFO] browser.live_scraper: Odds API: 21 games
+2026-02-18 12:18:07,552 [INFO] browser.live_scraper: Got 21 games via Odds API
+2026-02-18 12:18:07,615 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:18:07,665 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:18:07,700 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:18:07,711 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:18:07,776 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:18:07,782 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:18:07,814 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:18:07,825 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:18:07,870 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:18:07,923 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:18:07,924 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:18:07,987 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:18:08,066 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:18:08,067 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:18:08,097 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:18:08,099 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:18:08,164 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:18:08,206 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:18:08,242 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:18:08,251 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:18:08,255 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:18:08,256 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:18:08,256 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:18:08,256 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:18:08,256 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:18:08,256 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:18:08,256 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:18:08,257 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:18:08,257 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:18:08,257 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:18:08,257 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:18:08,257 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:18:08,257 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:18:08,258 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:18:08,258 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:18:08,258 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:18:08,258 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:18:08,258 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:18:08,258 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:18:08,259 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:18:08,259 [ERROR] main: Analysis cycle error: 'AnalysisResult' object has no attribute 'get'
+2026-02-18 12:18:08,265 [ERROR] analyzer.ollama_analyzer: Ollama error 404: {"error":"model 'gemma3' not found"}
+2026-02-18 12:18:08,267 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:18:32,994 [INFO] analyzer.ollama_analyzer: ✅ Ollama connected at http://localhost:11434 (model: gemma3:1b)
+2026-02-18 12:18:33,002 [INFO] main: 🚀 Starting BetMaster Agent...
+2026-02-18 12:18:35,323 [WARNING] browser.agent: Could not connect to existing browser
+2026-02-18 12:18:35,323 [INFO] browser.agent: Launching new browser...
+2026-02-18 12:18:36,275 [INFO] main: Browser connected via: new
+2026-02-18 12:18:43,017 [INFO] browser.agent: Navigated to: https://1xbet.co.ke/en/live/football
+2026-02-18 12:18:43,023 [INFO] ui.web_server: 🌐 Dashboard available at http://localhost:8080
+2026-02-18 12:18:43,027 [INFO] main: ✅ BetMaster Agent ready!
+2026-02-18 12:18:43,035 [INFO] main: 📊 Fetching team statistics...
+2026-02-18 12:18:43,389 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:18:44,021 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:18:44,022 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:18:44,022 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:18:44,536 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:18:46,034 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:18:46,035 [INFO] analyzer.stats_fetcher: Total cached teams: 0
+2026-02-18 12:18:46,035 [INFO] main: 📊 Stats loaded: 0 teams
+2026-02-18 12:18:48,854 [INFO] browser.live_scraper: Odds API returned 21 games
+2026-02-18 12:18:48,854 [INFO] browser.live_scraper: Odds API: 21 games
+2026-02-18 12:18:48,855 [INFO] browser.live_scraper: Got 21 games via Odds API
+2026-02-18 12:19:04,071 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:19:04,072 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:19:04,073 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:19:04,074 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:19:04,074 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:19:04,074 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:19:04,101 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:19:04,101 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:19:04,102 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:19:04,104 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:19:04,143 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:19:04,143 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:19:04,175 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:19:04,176 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:19:04,224 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:19:04,224 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:19:19,106 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:19:19,106 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:19:19,107 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:19:19,107 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:19:19,115 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:19:19,116 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:19:19,118 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:19:19,118 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:19:19,126 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:19:19,126 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:19:19,210 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:19:19,212 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:19:19,264 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:19:19,264 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:19:19,288 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:19:19,289 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:19:34,134 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:19:34,134 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:19:34,135 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:19:34,160 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:19:34,160 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:19:34,160 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:19:34,161 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:19:34,172 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:19:34,176 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:19:34,203 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:19:34,203 [INFO] main: Analysis complete: 0 recommendations
+2026-02-18 12:20:36,907 [INFO] analyzer.ollama_analyzer: ✅ Ollama connected at http://localhost:11434 (model: gemma3:1b)
+2026-02-18 12:20:36,915 [INFO] main: 🚀 Starting BetMaster Agent...
+2026-02-18 12:20:39,255 [WARNING] browser.agent: Could not connect to existing browser
+2026-02-18 12:20:39,255 [INFO] browser.agent: Launching new browser...
+2026-02-18 12:20:40,054 [INFO] main: Browser connected via: new
+2026-02-18 12:20:46,869 [INFO] browser.agent: Navigated to: https://1xbet.co.ke/en/live/football
+2026-02-18 12:20:46,873 [INFO] ui.web_server: 🌐 Dashboard available at http://localhost:8080
+2026-02-18 12:20:46,876 [INFO] main: ✅ BetMaster Agent ready!
+2026-02-18 12:20:46,886 [INFO] main: 📊 Fetching team statistics...
+2026-02-18 12:20:47,289 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:20:47,637 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:20:47,637 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:20:47,650 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:20:47,668 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:20:47,670 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:20:47,671 [INFO] analyzer.stats_fetcher: Total cached teams: 0
+2026-02-18 12:20:47,672 [INFO] main: 📊 Stats loaded: 0 teams
+2026-02-18 12:20:48,983 [INFO] browser.live_scraper: Odds API returned 21 games
+2026-02-18 12:20:48,983 [INFO] browser.live_scraper: Odds API: 21 games
+2026-02-18 12:20:48,984 [INFO] browser.live_scraper: Got 21 games via Odds API
+2026-02-18 12:21:19,109 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:21:19,118 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:21:19,161 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:21:19,176 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:21:19,207 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:21:19,209 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:21:19,210 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:21:19,211 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:21:19,275 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:21:19,285 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:21:19,289 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:21:19,289 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:21:19,351 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:21:19,373 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:23:00,879 [INFO] analyzer.ollama_analyzer: ✅ Ollama connected at http://localhost:11434 (model: gemma3:1b)
+2026-02-18 12:23:00,886 [INFO] main: 🚀 Starting BetMaster Agent...
+2026-02-18 12:23:03,238 [WARNING] browser.agent: Could not connect to existing browser
+2026-02-18 12:23:03,238 [INFO] browser.agent: Launching new browser...
+2026-02-18 12:23:04,142 [INFO] main: Browser connected via: new
+2026-02-18 12:23:10,877 [INFO] browser.agent: Navigated to: https://1xbet.co.ke/en/live/football
+2026-02-18 12:23:10,903 [INFO] ui.web_server: 🌐 Dashboard available at http://localhost:8080
+2026-02-18 12:23:10,906 [INFO] main: ✅ BetMaster Agent ready!
+2026-02-18 12:23:10,909 [INFO] main: 📊 Fetching team statistics...
+2026-02-18 12:23:11,324 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:23:12,694 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:23:12,749 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:23:12,827 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:23:12,867 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:23:13,023 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:23:13,023 [INFO] analyzer.stats_fetcher: Total cached teams: 0
+2026-02-18 12:23:13,023 [INFO] main: 📊 Stats loaded: 0 teams
+2026-02-18 12:23:13,540 [INFO] browser.live_scraper: Odds API returned 21 games
+2026-02-18 12:23:13,541 [INFO] browser.live_scraper: Odds API: 21 games
+2026-02-18 12:23:13,542 [INFO] browser.live_scraper: Got 21 games via Odds API
+2026-02-18 12:23:43,712 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:23:43,719 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:23:43,734 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:23:43,735 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:23:43,773 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:23:43,776 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:23:43,848 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:23:43,851 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:23:43,862 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:23:43,866 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:23:43,892 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:23:43,908 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:23:43,984 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:23:43,988 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:23:44,055 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:23:44,067 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:24:13,731 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:24:13,735 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:24:13,751 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:24:13,752 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:24:13,993 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:24:13,993 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:24:13,993 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:24:13,993 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:24:13,996 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:24:14,002 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:24:14,002 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:24:14,003 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:24:14,003 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:24:14,004 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:24:14,064 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:24:14,065 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:24:43,754 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:24:43,771 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:24:44,038 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:24:44,039 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:24:44,040 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:24:44,040 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:24:44,041 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:24:44,041 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:24:44,042 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:24:44,042 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:24:44,042 [INFO] main: Analysis complete: 0 recommendations
+2026-02-18 12:25:45,639 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:25:47,235 [INFO] browser.live_scraper: Odds API returned 21 games
+2026-02-18 12:25:47,236 [INFO] browser.live_scraper: Odds API: 21 games
+2026-02-18 12:25:47,237 [INFO] browser.live_scraper: Got 21 games via Odds API
+2026-02-18 12:26:17,342 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:26:17,344 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:26:17,351 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:26:17,351 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:26:17,373 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:26:17,374 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:26:17,392 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:26:17,404 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:26:17,467 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:26:17,470 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:26:17,484 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:26:17,484 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:26:17,486 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:26:17,487 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:26:17,517 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:26:17,519 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:26:47,360 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:26:47,367 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:26:47,376 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:26:47,377 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:26:47,386 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:26:47,387 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:26:47,417 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:26:47,419 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:26:47,486 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:26:47,488 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:26:47,509 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:26:47,509 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:26:47,519 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:26:47,519 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:26:47,537 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:26:47,540 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:27:17,377 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:27:17,377 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:27:17,392 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:27:17,392 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:27:17,392 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:27:17,393 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:27:17,426 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:27:17,427 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:27:17,501 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:27:17,506 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:27:17,507 [INFO] main: Analysis complete: 0 recommendations
+2026-02-18 12:27:57,823 [INFO] analyzer.ollama_analyzer: ✅ Ollama connected at http://localhost:11434 (model: gemma3:1b)
+2026-02-18 12:27:57,827 [INFO] main: 🚀 Starting BetMaster Agent...
+2026-02-18 12:28:00,154 [WARNING] browser.agent: Could not connect to existing browser
+2026-02-18 12:28:00,154 [INFO] browser.agent: Launching new browser...
+2026-02-18 12:28:01,066 [INFO] main: Browser connected via: new
+2026-02-18 12:28:07,951 [INFO] browser.agent: Navigated to: https://1xbet.co.ke/en/live/football
+2026-02-18 12:28:07,956 [INFO] ui.web_server: 🌐 Dashboard available at http://localhost:8080
+2026-02-18 12:28:07,959 [INFO] main: ✅ BetMaster Agent ready!
+2026-02-18 12:28:07,967 [INFO] main: 📊 Fetching team statistics...
+2026-02-18 12:28:08,287 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:28:08,701 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:28:08,718 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:28:08,732 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:28:08,742 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:28:08,753 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:28:08,754 [INFO] analyzer.stats_fetcher: Total cached teams: 0
+2026-02-18 12:28:08,754 [INFO] main: 📊 Stats loaded: 0 teams
+2026-02-18 12:28:10,886 [INFO] browser.live_scraper: Odds API returned 21 games
+2026-02-18 12:28:10,887 [INFO] browser.live_scraper: Odds API: 21 games
+2026-02-18 12:28:10,887 [INFO] browser.live_scraper: Got 21 games via Odds API
+2026-02-18 12:28:40,960 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:28:40,985 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:28:41,054 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:28:41,067 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:28:41,106 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:28:41,114 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:28:41,116 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:28:41,116 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:28:41,136 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:28:41,137 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:28:41,185 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:28:41,188 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:28:41,207 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:28:41,208 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:28:41,273 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:28:41,275 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:29:10,970 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:29:10,970 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:29:11,068 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:29:11,070 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:29:11,121 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:29:11,123 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:29:11,150 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:29:11,152 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:29:11,154 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:29:11,154 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:29:11,200 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:29:11,207 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:29:11,236 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:29:11,236 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:29:11,284 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:29:11,287 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:29:40,996 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:29:41,002 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:29:41,102 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:29:41,116 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:29:41,140 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:29:41,140 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:29:41,185 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:29:41,186 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:29:41,189 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:29:41,189 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:29:41,189 [INFO] main: Analysis complete: 0 recommendations
+2026-02-18 12:30:16,049 [INFO] analyzer.ollama_analyzer: ✅ Ollama connected at http://localhost:11434 (model: gemma3:1b)
+2026-02-18 12:30:16,054 [INFO] main: 🚀 Starting BetMaster Agent...
+2026-02-18 12:30:18,354 [WARNING] browser.agent: Could not connect to existing browser
+2026-02-18 12:30:18,354 [INFO] browser.agent: Launching new browser...
+2026-02-18 12:30:19,187 [INFO] main: Browser connected via: new
+2026-02-18 12:30:26,549 [INFO] browser.agent: Navigated to: https://1xbet.co.ke/en/live/football
+2026-02-18 12:30:26,554 [INFO] ui.web_server: 🌐 Dashboard available at http://localhost:8080
+2026-02-18 12:30:26,556 [INFO] main: ✅ BetMaster Agent ready!
+2026-02-18 12:30:26,559 [INFO] main: 📊 Fetching team statistics...
+2026-02-18 12:30:26,857 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:30:27,321 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:30:27,331 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:30:27,852 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:30:27,919 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:30:28,441 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:30:28,442 [INFO] analyzer.stats_fetcher: Total cached teams: 0
+2026-02-18 12:30:28,442 [INFO] main: 📊 Stats loaded: 0 teams
+2026-02-18 12:30:29,272 [INFO] browser.live_scraper: Odds API returned 21 games
+2026-02-18 12:30:29,272 [INFO] browser.live_scraper: Odds API: 21 games
+2026-02-18 12:30:29,273 [INFO] browser.live_scraper: Got 21 games via Odds API
+2026-02-18 12:30:59,381 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:30:59,402 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:30:59,416 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:30:59,419 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:30:59,450 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:30:59,459 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:30:59,537 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:30:59,573 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:30:59,574 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:30:59,576 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:30:59,584 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:30:59,584 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:30:59,585 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:30:59,607 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:30:59,652 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:30:59,655 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:31:29,386 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:31:29,387 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:31:29,434 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:31:29,436 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:31:29,472 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:31:29,493 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:31:29,551 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:31:29,553 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:31:29,592 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:31:29,600 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:31:29,601 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:31:29,602 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:31:29,621 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:31:29,622 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:31:29,676 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:31:29,679 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:31:59,397 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:31:59,401 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:31:59,448 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:31:59,451 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:31:59,517 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:31:59,521 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:31:59,605 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:31:59,606 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:31:59,633 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:31:59,633 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:31:59,633 [INFO] main: Analysis complete: 0 recommendations
+2026-02-18 12:32:48,067 [INFO] analyzer.ollama_analyzer: ✅ Ollama connected at http://localhost:11434 (model: gemma3:1b)
+2026-02-18 12:32:48,071 [INFO] main: 🚀 Starting BetMaster Agent...
+2026-02-18 12:32:50,439 [WARNING] browser.agent: Could not connect to existing browser
+2026-02-18 12:32:50,439 [INFO] browser.agent: Launching new browser...
+2026-02-18 12:32:51,316 [INFO] main: Browser connected via: new
+2026-02-18 12:32:58,049 [INFO] browser.agent: Navigated to: https://1xbet.co.ke/en/live/football
+2026-02-18 12:32:58,057 [INFO] ui.web_server: 🌐 Dashboard available at http://localhost:8080
+2026-02-18 12:32:58,060 [INFO] main: ✅ BetMaster Agent ready!
+2026-02-18 12:32:58,067 [INFO] main: 📊 Fetching team statistics...
+2026-02-18 12:32:58,543 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:32:59,510 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:33:00,004 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:33:00,151 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:33:01,171 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:33:01,253 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:33:01,254 [INFO] analyzer.stats_fetcher: Total cached teams: 0
+2026-02-18 12:33:01,254 [INFO] main: 📊 Stats loaded: 0 teams
+2026-02-18 12:33:02,232 [INFO] browser.live_scraper: Odds API returned 21 games
+2026-02-18 12:33:02,232 [INFO] browser.live_scraper: Odds API: 21 games
+2026-02-18 12:33:02,233 [INFO] browser.live_scraper: Got 21 games via Odds API
+2026-02-18 12:33:32,337 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:33:32,406 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:33:32,406 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:33:32,407 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:33:32,475 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:33:32,539 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:33:32,610 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:33:32,673 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:33:32,673 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:33:32,674 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:33:32,737 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:33:32,783 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:33:32,801 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:33:32,860 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:33:32,867 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:33:32,867 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:34:21,368 [INFO] analyzer.ollama_analyzer: ✅ Ollama connected at http://localhost:11434 (model: gemma3:1b)
+2026-02-18 12:34:21,371 [INFO] main: 🚀 Starting BetMaster Agent...
+2026-02-18 12:34:23,687 [WARNING] browser.agent: Could not connect to existing browser
+2026-02-18 12:34:23,687 [INFO] browser.agent: Launching new browser...
+2026-02-18 12:34:24,576 [INFO] main: Browser connected via: new
+2026-02-18 12:34:31,303 [INFO] browser.agent: Navigated to: https://1xbet.co.ke/en/live/football
+2026-02-18 12:34:31,324 [INFO] ui.web_server: 🌐 Dashboard available at http://localhost:8080
+2026-02-18 12:34:31,326 [INFO] main: ✅ BetMaster Agent ready!
+2026-02-18 12:34:31,335 [INFO] main: 📊 Fetching team statistics...
+2026-02-18 12:34:31,975 [INFO] browser.agent: Found 0 live games
+2026-02-18 12:34:33,088 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:34:33,092 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:34:33,092 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:34:33,118 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:34:33,119 [WARNING] analyzer.stats_fetcher: API key invalid or not set - using default ratings
+2026-02-18 12:34:33,120 [INFO] analyzer.stats_fetcher: Total cached teams: 0
+2026-02-18 12:34:33,120 [INFO] main: 📊 Stats loaded: 0 teams
+2026-02-18 12:34:34,387 [INFO] browser.live_scraper: Odds API returned 21 games
+2026-02-18 12:34:34,387 [INFO] browser.live_scraper: Odds API: 21 games
+2026-02-18 12:34:34,388 [INFO] browser.live_scraper: Got 21 games via Odds API
+2026-02-18 12:34:34,388 [INFO] main: Running batch analysis on 21 games...
+2026-02-18 12:35:04,475 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:35:04,475 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:35:04,564 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:35:04,564 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:35:04,565 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:35:04,567 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:35:04,610 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:35:04,619 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:35:04,657 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:35:04,666 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:35:04,687 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:35:04,688 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:35:04,748 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:35:04,749 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)
+2026-02-18 12:35:04,780 [WARNING] analyzer.ollama_analyzer: Ollama request timed out
+2026-02-18 12:35:04,781 [WARNING] analyzer.ollama_analyzer: Failed to parse AI JSON: Expecting value: line 1 column 1 (char 0)

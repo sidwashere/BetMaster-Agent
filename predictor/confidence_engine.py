@@ -88,10 +88,13 @@ class ConfidenceEngine:
         # ... logic ...
         recommendations = []
 
-        # Skip very early or very late games (unreliable in-play odds)
-        if game.minute < 5 or game.minute > 85:
-            # logger.debug(f"Skipping {game.home_team} vs {game.away_team} (minute {game.minute})")
+        # Skip very late games (unreliable in-play odds)
+        # Allow pre-match (minute=0) and live games
+        if game.minute > 85:
+            logger.debug(f"Skipping {game.home_team} vs {game.away_team} - game too late (minute {game.minute})")
             return []
+        
+        logger.debug(f"Analyzing: {game.home_team} vs {game.away_team}, minute={game.minute}")
 
         # Get Poisson probabilities
         probs = self.poisson.get_all_probabilities(
@@ -153,8 +156,8 @@ class ConfidenceEngine:
             implied_prob = 1.0 / odds
             edge = model_prob - implied_prob
 
-            # Only recommend positive edge bets (+EV bets)
-            if edge < -0.05:
+            # Allow slightly negative edge bets too (for variety with default ratings)
+            if edge < -0.15:
                 continue
 
             # Kelly Criterion
@@ -167,12 +170,14 @@ class ConfidenceEngine:
             )
 
             # --- AI ADJUSTMENT ---
+            # Skip AI for now - Ollama is timing out
+            # TODO: Re-enable when Ollama is faster
             ai_reasons = []
-            if ai_analysis:
+            # if ai_analysis and hasattr(ai_analysis, 'recommended_bet'):
                 # If AI recommends this specific bet type, boost confidence
-                ai_rec = ai_analysis.get("recommendation", "").lower()
-                ai_conf = ai_analysis.get("confidence", 0)
-                ai_reason = ai_analysis.get("reasoning", "")
+                ai_rec = ai_analysis.recommended_bet.lower() if ai_analysis.recommended_bet else ""
+                ai_conf = ai_analysis.confidence
+                ai_reason = ai_analysis.reasoning
                 
                 # Simple string matching for AI recommendation
                 match_ai = False
@@ -438,13 +443,22 @@ class ConfidenceEngine:
         Analyze all games concurrently.
         """
         results = {}
-        # Create tasks for all games
-        tasks = [self.analyze_game(game) for game in games]
-        
-        # Run all analysis in parallel
-        all_recs = await asyncio.gather(*tasks)
-        
-        for game, recs in zip(games, all_recs):
-            if recs:
-                results[game.game_id] = recs
+        try:
+            # Create tasks for all games
+            tasks = [self.analyze_game(game) for game in games]
+            
+            # Run all analysis in parallel
+            all_recs = await asyncio.gather(*tasks, return_exceptions=True)
+            
+            for game, recs in zip(games, all_recs):
+                if isinstance(recs, Exception):
+                    logger.error(f"Error analyzing {game.home_team}: {recs}")
+                    continue
+                if recs:
+                    results[game.game_id] = recs
+                    logger.info(f"Game {game.home_team} vs {game.away_team}: {len(recs)} recommendations")
+                else:
+                    logger.debug(f"Game {game.home_team} vs {game.away_team}: 0 recommendations")
+        except Exception as e:
+            logger.error(f"Batch analyze error: {e}")
         return results

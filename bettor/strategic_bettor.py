@@ -113,7 +113,7 @@ class StrategicBettor:
         self.mode = mode
         self.settings = STRATEGIES[mode]
         logger.info(f"Strategy changed: {old_mode.value} -> {mode.value}")
-        logger.info(f"New settings: confidence>={self.settings.min%, edge>_confidence}={self.settings.min_edge*100}%")
+        logger.info(f"New settings: confidence>={self.settings.min_confidence}, edge>={self.settings.min_edge*100}%")
     
     def evaluate_bet(
         self,

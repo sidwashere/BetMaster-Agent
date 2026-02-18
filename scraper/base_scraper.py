@@ -7,7 +7,15 @@ Inspired by: github.com/microsoft/playwright-python examples
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from typing import List, Optional
+from enum import Enum
 import logging
+
+class ScraperStatus(Enum):
+    IDLE = "IDLE"
+    LOGGING_IN = "LOGGING_IN"
+    LOGGED_IN = "LOGGED_IN"
+    WAITING_FOR_USER = "WAITING_FOR_USER"
+    ERROR = "ERROR"
 
 logger = logging.getLogger(__name__)
 
@@ -53,6 +61,7 @@ class BaseScraper(ABC):
         self.url = url
         self.browser = None
         self.page = None
+        self.status = ScraperStatus.IDLE
 
     @abstractmethod
     async def get_live_games(self) -> List[LiveGame]:
@@ -72,6 +81,15 @@ class BaseScraper(ABC):
     async def get_balance(self) -> float:
         """Return current account balance in KES."""
         pass
+
+    @abstractmethod
+    async def get_balance_kes(self) -> float:
+        """Return current account balance specifically in KES, with error handling."""
+        pass
+
+    async def recheck_login(self) -> bool:
+        """Manually trigger a check to see if we are now logged in."""
+        return False
 
     async def setup_browser(self, playwright, headless: bool = False):
         """Initialize Playwright browser."""

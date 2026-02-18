@@ -273,15 +273,27 @@ class SportPesaScraper(BaseScraper):
         if not creds.get("username"):
             return False
         try:
+            self.status = ScraperStatus.LOGGING_IN
             await self.safe_goto("https://www.sportpesa.com/login")
             await self.page.fill("input[name='username'], input[type='tel']", creds["username"])
             await self.page.fill("input[name='password']", creds["password"])
             await self.page.click("button[type='submit']")
             await self.page.wait_for_timeout(3000)
-            return True
+            
+            if await self.page.query_selector(".user-balance, .logout-btn"):
+                self.status = ScraperStatus.LOGGED_IN
+                return True
+            
+            self.status = ScraperStatus.ERROR
+            return False
         except Exception as e:
             logger.error(f"[SportPesa] Login error: {e}")
+            self.status = ScraperStatus.ERROR
             return False
+
+    async def get_balance_kes(self) -> float:
+        """Fetch current balance in KES."""
+        return await self.get_balance()
 
     async def get_balance(self) -> float:
         try:

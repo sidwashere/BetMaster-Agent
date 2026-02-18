@@ -57,6 +57,16 @@ class ScraperManager:
 
         self._active = True
 
+    def get_scraper_statuses(self) -> Dict[str, str]:
+        """Return the current status of each scraper."""
+        return {name: scraper.status.value for name, scraper in self.scrapers.items()}
+
+    async def trigger_recheck_login(self):
+        """Trigger recheck on all scrapers waiting for user."""
+        for name, scraper in self.scrapers.items():
+            if scraper.status == ScraperStatus.WAITING_FOR_USER:
+                await scraper.recheck_login()
+
     async def get_all_live_games(self) -> List[LiveGame]:
         """
         Fetch live games from all enabled sites concurrently.
@@ -81,8 +91,15 @@ class ScraperManager:
 
         # Deduplicate: same teams = keep entry with most odds available
         deduplicated = self._deduplicate(all_games)
-        logger.info(f"Total unique live games: {len(deduplicated)}")
-        return deduplicated
+        
+        # Final safety filter: Human only games (in case scrapers missed it)
+        human_only = [
+            g for g in deduplicated 
+            if not any(term in g.league.lower() for term in ["fifa", "esoccer", "virtual", "cyber", "e-sports"])
+        ]
+        
+        logger.info(f"Total unique live human games: {len(human_only)} (filtered out {len(deduplicated) - len(human_only)})")
+        return human_only
 
     def _deduplicate(self, games: List[LiveGame]) -> List[LiveGame]:
         """

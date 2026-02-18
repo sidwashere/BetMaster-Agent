@@ -107,6 +107,13 @@ class XBetScraper(BaseScraper):
             away_score = int(score.get("FS", {}).get("G", 0))
             minute = int(event.get("LE", 0))
             league = event.get("L", "Unknown League")
+            
+            # Human Game Filtering: Ignore virtuals, FIFA, eSoccer, etc.
+            # 1xbet usually prefixes these or uses specific league names
+            league_lower = league.lower()
+            if any(term in league_lower for term in ["fifa", "esoccer", "virtual", "cyber", "e-sports"]):
+                logger.debug(f"[1xbet] Skipping non-human game: {home} vs {away} in {league}")
+                return None
 
             # Extract odds - 1xbet odds structure
             odds = self._extract_odds(event.get("E", []))
@@ -281,7 +288,7 @@ class XBetScraper(BaseScraper):
             return False
 
     async def login(self) -> bool:
-        """Login to 1xbet account."""
+        """Login to 1xbet account with 2FA detection."""
         creds = config.SITE_CREDENTIALS.get("1xbet", {})
         username = creds.get("username", "")
         password = creds.get("password", "")
@@ -291,15 +298,59 @@ class XBetScraper(BaseScraper):
             return False
 
         try:
+            self.status = ScraperStatus.LOGGING_IN
             await self.safe_goto("https://1xbet.com/en/login")
-            await self.page.fill("input[name='email'], input[type='email']", username)
+            
+            # Fill credentials
+            await self.page.fill("input[name='email'], input[type='email'], input[name='login']", username)
             await self.page.fill("input[name='password'], input[type='password']", password)
             await self.page.click("button[type='submit'], .login-btn")
-            await self.page.wait_for_timeout(3000)
-            return True
+            
+            # Wait for response or 2FA screen
+            for _ in range(10): # 10 seconds timeout
+                await self.page.wait_for_timeout(1000)
+                
+                # Check if logged in (look for user profile or balance)
+                if await self.page.query_selector(".user-info__balance, .user-name"):
+                    self.status = ScraperStatus.LOGGED_IN
+                    logger.info("[1xbet] Login successful")
+                    return True
+                
+                # Check for 2FA/Google Auth screens
+                content = await self.page.content()
+                if any(term in content.lower() for term in ["authenticator", "google auth", "sms code", "verification code"]):
+                    self.status = ScraperStatus.WAITING_FOR_USER
+                    logger.warning("[1xbet] 2FA required. Please complete login manually in the browser.")
+                    return False
+
+            self.status = ScraperStatus.ERROR
+            return False
         except Exception as e:
             logger.error(f"[1xbet] Login failed: {e}")
+            self.status = ScraperStatus.ERROR
             return False
+
+    async def get_balance_kes(self) -> float:
+        """Fetch current account balance in KES."""
+        try:
+            # Refresh if needed or just query
+            balance_el = await self.page.query_selector(".user-info__balance, [class*='balance-amount']")
+            if balance_el:
+                text = (await balance_el.inner_text()).strip()
+                # Remove currency symbols and formatting
+                val = float(re.sub(r"[^\d.]", "", text.replace(",", "")))
+                return val
+        except Exception as e:
+            logger.error(f"[1xbet] Failed to get balance: {e}")
+        return 0.0
+
+    async def recheck_login(self) -> bool:
+        """Manually check if user completed 2FA."""
+        if await self.page.query_selector(".user-info__balance, .user-name"):
+            self.status = ScraperStatus.LOGGED_IN
+            logger.info("[1xbet] Manual login detected/confirmed")
+            return True
+        return False
 
     async def get_balance(self) -> float:
         """Fetch current account balance."""

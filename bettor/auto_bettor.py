@@ -64,7 +64,16 @@ class AutoBettor:
             self._block(rec, f"Daily loss limit reached ({config.DAILY_LOSS_LIMIT} KES)")
             return False
 
-        # Safety check 4: Duplicate detection
+        # Safety check 4: Sufficient Balance
+        try:
+            balance = await self.scrapers.scrapers[rec.game.site].get_balance_kes()
+            if balance < rec.recommended_stake:
+                self._block(rec, f"Insufficient balance on {rec.game.site}: {balance} KES")
+                return False
+        except Exception as e:
+            logger.warning(f"Could not verify balance on {rec.game.site}: {e}")
+
+        # Safety check 5: Duplicate detection
         dedup_key = f"{rec.game.game_id}_{rec.bet_type}"
         if dedup_key in self._placed_today:
             return False

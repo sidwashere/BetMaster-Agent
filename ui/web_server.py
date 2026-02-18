@@ -176,6 +176,10 @@ class SoccerBotWebServer:
                 <button onclick="forceRefresh()" class="p-2.5 glass rounded-xl hover:bg-slate-700 transition-colors" title="Force Refresh">
                     <i data-lucide="refresh-cw" class="w-5 h-5 text-slate-300"></i>
                 </button>
+                <button onclick="toggleStrategy()" id="strategy-btn" class="flex items-center gap-2 px-4 py-2 rounded-xl font-semibold transition-all bg-slate-800 border border-slate-700 hover:border-purple-500 group" title="Toggle Strategy">
+                    <i data-lucide="shield" class="w-4 h-4 text-slate-400"></i>
+                    <span id="strategy-text" class="text-sm">Conservative</span>
+                </button>
                 <div class="h-10 w-px bg-slate-700 mx-2"></div>
                 <button onclick="toggleAutoBet()" id="auto-btn" class="flex items-center gap-3 px-6 py-2.5 rounded-xl font-semibold transition-all shadow-lg bg-slate-800 border border-slate-700 hover:border-blue-500 group">
                     <div class="w-3 h-3 rounded-full bg-slate-600 group-hover:bg-slate-500" id="auto-indicator"></div>
@@ -533,6 +537,49 @@ class SoccerBotWebServer:
             }
         }
 
+        let currentStrategy = 'conservative';
+        
+        async function toggleStrategy() {
+            const newStrategy = currentStrategy === 'conservative' ? 'aggressive' : 'conservative';
+            
+            if (newStrategy === 'aggressive') {
+                const confirmed = confirm("⚠️ SWITCH TO AGGRESSIVE MODE?\n\nThis will:\n• Lower confidence threshold to 70%\n• Accept 5%+ edge (vs 8%)\n• Allow more bets per day\n\nAre you sure?");
+                if (!confirmed) return;
+            }
+            
+            try {
+                const res = await fetch('/api/strategy', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({mode: newStrategy})
+                });
+                const result = await res.json();
+                
+                if (result.status === 'ok') {
+                    currentStrategy = newStrategy;
+                    updateStrategyUI();
+                    showNotification(`Strategy: ${newStrategy.charAt(0).toUpperCase() + newStrategy.slice(1)}`, 'success');
+                }
+            } catch (e) {
+                showNotification("Failed to change strategy", "error");
+            }
+        }
+        
+        function updateStrategyUI() {
+            const btn = document.getElementById('strategy-btn');
+            const text = document.getElementById('strategy-text');
+            
+            if (currentStrategy === 'conservative') {
+                btn.classList.remove('border-purple-500/50', 'bg-purple-500/5');
+                btn.classList.add('border-slate-700');
+                text.innerText = 'Conservative';
+            } else {
+                btn.classList.add('border-purple-500/50', 'bg-purple-500/5');
+                btn.classList.remove('border-slate-700');
+                text.innerText = 'Aggressive';
+            }
+        }
+
         async function placeManualBet(gameId, betType, stake, odds) {
             try {
                 const res = await fetch('/api/bet', {
@@ -657,5 +704,20 @@ class SoccerBotWebServer:
             return web.json_response({"status": "error", "message": "Callback not registered"}, status=500)
         except Exception as e:
             logger.error(f"Error handling recheck: {e}")
+            return web.json_response({"status": "error", "message": str(e)}, status=500)
+
+    async def handle_strategy(self, request):
+        try:
+            data = await request.json()
+            mode = data.get("mode", "conservative")
+            
+            if self.on_strategy_change:
+                self.on_strategy_change(mode)
+                self.data["strategy"]["mode"] = mode
+                return web.json_response({"status": "ok", "mode": mode})
+            
+            return web.json_response({"status": "error", "message": "Callback not registered"}, status=500)
+        except Exception as e:
+            logger.error(f"Error handling strategy: {e}")
             return web.json_response({"status": "error", "message": str(e)}, status=500)
 
